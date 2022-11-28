@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="cheatContainer">
+            <h3 class="cheatNumber"></h3>
+            <button class="cheatButton" onclick="cheat()">Cheat</button>
+        </div>
+        <div class="resetContainer">
+            <button class="resetButton" onclick="reset()">Reset</button>
+            
+        </div>
+
+        <h1>Can you crack the code in 10 tries ?</h1>
+        <div class="card">
+
+            <div class="cardHeader">
+                <h4>Enter a 4 digit number with unique digits.</h4>
+                <h5>X =A digit is in the code ond in the correct position</h5>
+                <h5>Y = A digit is in the code but in the wrong position</h5>
+            </div>
+            
+            <div class="cardBody">
+                <div class="inputZone">
+                    <div class="digits">
+                        <input type="number" min="0" max=9 maxlength="1" class="digit" id="d1">
+                        <input type="number" min="0" max=9 maxlength="1" class="digit" id="d2">
+                        <input type="number" min="0" max=9 maxlength="1" class="digit" id="d3">
+                        <input type="number" min="0" max=9 maxlength="1" class="digit" id="d4">
+                    </div>
+                    <button class="submitButton" onclick="guess()">v</button>
+                </div>
+            </div>
+        </div>
+        <div class="tryContainer">
+
+      
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

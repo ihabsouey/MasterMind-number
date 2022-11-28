@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+body {
+    background-color: #1f2632;
+    color: #cee3e9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 90%;
+    min-width: 80%;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cardHeader {
+    margin: 25px 0;
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.digit, .digitR {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 5px solid #cee3e9;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.digitR {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fabb69;
+    padding-left: 0;
+
+    pointer-events: none;
+
+}
+
+.inputZone, .inputZoneR {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.submitButton {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 5px solid #3fccf3;
+    background-color: rgb(42, 255, 42);
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    transition: ease-in 0.1s;
+    transform: scale(1.1);
+}
+
+.tryContainer {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.try {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+    width: 40%;
+
+}
+
+.resultZone {
+    margin-left: 0px;
+}
+
+.try:nth-child(even) {
+    border-left: 5px solid #3fccf3;
+}
+
+h1 {
+    color: #3fccf3;
+}
+
+h3, h4 {
+    color: #fabb69;
+}
+
+.cheatContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cheatNumber {
+    position: absolute;
+    right: 1.5rem;
+
+}
+
+.cheatButton, .resetButton {
+    position: absolute;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 0.8rem;
+    font-family: inherit;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.cheatButton {
+    top: 1.5rem;
+    right: .8rem;
+}
+
+.resetButton {
+    top: 1.5rem;
+    left: .8rem;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.cheatButton:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
