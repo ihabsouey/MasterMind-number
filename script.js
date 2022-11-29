@@ -97,7 +97,7 @@ function guess() {
 
     divResultZone = document.createElement("div")
     divResultZone.classList.add("resultZone")
-    divResultZone.innerHTML = existAndCorrectNumber + " X <br> " + + existAndWrongNumber + " Y";
+    divResultZone.innerHTML = existAndCorrectNumber + "<span class='xy'> X</span> <br> " + + existAndWrongNumber + " <span class='xy'>Y</span>";
 
 
     divTry = document.createElement("div")
