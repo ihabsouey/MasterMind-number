@@ -41,11 +41,11 @@ function guess() {
     if (i > 10) {
         alert("You lose! The number is " + randomNumber);
         h1lose = document.createElement("h2");
-        h1lose.textContent = "Loser ";
+        h1lose.textContent = "Game Over !  the right number is "+randomNumber;
         document.getElementsByClassName("cardHeader")[0].innerHTML = "";
         document.getElementsByClassName("cardHeader")[0].appendChild(h1lose);
         document.getElementsByClassName("submitButton")[0].setAttribute("disabled", "disabled");
-
+        document.body.style.backgroundColor = "red";
         return;
     }
     var guess1 = digit1Input.value;
@@ -115,6 +115,8 @@ function guess() {
         document.getElementsByClassName("cardHeader")[0].innerHTML = "";
         document.getElementsByClassName("cardHeader")[0].appendChild(h1Won);
         document.getElementsByClassName("submitButton")[0].setAttribute("disabled", "disabled");
+        document.body.style.backgroundColor = "green";
+
         alert("Winner !");
     }
 
