@@ -111,7 +111,7 @@ function guess() {
 
     if (existAndCorrectNumber == 4) {
         h1Won = document.createElement("h2")
-        h1Won.textContent = cheatedOnce? "You win cheater " : "You win ";
+        h1Won.textContent = cheatedOnce? "Congratulation cheater ! " : "Congratulation Winner ! ";
         document.getElementsByClassName("cardHeader")[0].innerHTML = "";
         document.getElementsByClassName("cardHeader")[0].appendChild(h1Won);
         document.getElementsByClassName("submitButton")[0].setAttribute("disabled", "disabled");
