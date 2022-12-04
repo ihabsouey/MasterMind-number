@@ -39,7 +39,7 @@ var i = 1;
 
 function guess() {
     if (i > 10) {
-        alert("You lose! The number is " + randomNumber);
+        alert("Loser");
         h1lose = document.createElement("h2");
         h1lose.textContent = "Game Over !  the right number is "+randomNumber;
         document.getElementsByClassName("cardHeader")[0].innerHTML = "";
