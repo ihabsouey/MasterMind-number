@@ -53,10 +53,13 @@ function guess() {
     var guess3 = digit3Input.value;
     var guess4 = digit4Input.value;
 
-    if (guess1 == "" || guess2 == "" || guess3 == "" || guess4 == "") {
+    
+   
+    if (guess1 == "" || guess2 == "" || guess3 == "" || guess4 == "" || guess1 >9 || guess<0 || guess2 >9 || guess2<0 || guess3 >9 || guess3<0 || guess4 >9 || guess4<0) {
         alert("Please enter a 4 digit number");
         return;
     }
+
     if (hasDuplicateDigits(guess1, guess2, guess3, guess4)) {
         alert("You can't have duplicate digits in your guess!");
         return;
